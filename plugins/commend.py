@@ -31,13 +31,13 @@ async def start(client, message):
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT.format(me2, user_id, mention))
     if len(message.command) == 1 or message.command[1] == "start":
         buttons = [[
-            InlineKeyboardButton('• ᴜᴘᴅᴀᴛᴇᴅ •', url=CHANNEL),
-            InlineKeyboardButton('• sᴜᴘᴘᴏʀᴛ •', url=SUPPORT)
+            InlineKeyboardButton('• Uᴘᴅᴀᴛᴇᴅ •', url=CHANNEL),
+            InlineKeyboardButton('• Sᴜᴘᴘᴏʀᴛ •', url=SUPPORT)
         ], [
-            InlineKeyboardButton('• ʜᴇʟᴘ •', callback_data='help'),
-            InlineKeyboardButton('• ᴀʙᴏᴜᴛ •', callback_data='about')
+            InlineKeyboardButton('• Hᴇʟᴘ •', callback_data='help'),
+            InlineKeyboardButton('• Aʙᴏᴜᴛ •', callback_data='about')
         ],[
-            InlineKeyboardButton('✨ ʙᴜʏ ꜱᴜʙꜱᴄʀɪᴘᴛɪᴏɴ : ʀᴇᴍᴏᴠᴇ ᴀᴅꜱ ✨', callback_data="premium_info")
+            InlineKeyboardButton('✨ Bᴜʏ Sᴜʙsᴄʀɪᴘᴛɪᴏɴ : Rᴇᴍᴏᴠᴇ Aᴅs ✨', callback_data="premium_info")
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
